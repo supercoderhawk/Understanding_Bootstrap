@@ -2,41 +2,170 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Use Bootstrap</title>
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <title>Use Bootstrap</title>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
-    <!--地址元素-->
-    <address>
+  <!--缩略语-->
+  <abbr title="缩略语" class="initialism">abbr</abbr>
+  <!--地址元素-->
+  <address>
         <strong>Twitter, Inc.</strong><br>
         795 Folsom Ave, Suite 600<br>San Francisco, CA 94107<br>
         <abbr title="Phone">P:</abbr>(123) 456-7890
     </address>
-    <address>
+  <address>
         <strong>汤姆大叔</strong><br>
         <a href="mailto:#">tomxu@outlook.com</a>
     </address>
-    <!--表单-->
-    <form>
+  <!-- 引用 -->
+  <blockquote class="pull-right">
+    <p>引用</p>
+    <small><cite title="测试">引用</cite></small>
+  </blockquote>
+  <!-- 内联列表 -->
+  <ul class="list-inline">
+    <li>项一</li>
+    <li>项二</li>
+  </ul>
+  <!-- 定义列表 -->
+  <dl>
+    <dt>项一</dt>
+    <dd>项二,yixiemiaoshu</dd>
+  </dl>
+  <dl class="dl-horizontal">
+    <dt>项一</dt>
+    <dd>项二,yixiemiaoshu</dd>
+  </dl>
+
+  <!-- 代码 -->
+  <kbd>fdfk</kbd>
+  <code>code</code>
+
+  <!-- 表格 -->
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead>
+        <th>列1</th>
+        <th>列2</th>
+        <th>列3</th>
+        <th>列4</th>
+        <th>列5</th>
+      </thead>
+      <tbody>
+        <tr class="warning">
+          <td>单元格1,1</td>
+          <td>单元格1,2</td>
+          <td>单元格1,3</td>
+          <td>单元格1,4</td>
+          <td>单元格1,5</td>
+        </tr>
+        <tr>
+          <td>单元格2,1</td>
+          <td>单元格2,2</td>
+          <td>单元格2,3</td>
+          <td>单元格2,4</td>
+          <td>单元格2,5</td>
+        </tr>
+        <tr>
+          <td>单元格3,1</td>
+          <td>单元格3,2</td>
+          <td>单元格3,3</td>
+          <td>单元格3,4</td>
+          <td>单元格3,5</td>
+        </tr>
+        <tr>
+          <td>单元格4,1</td>
+          <td>单元格4,2</td>
+          <td>单元格4,3</td>
+          <td>单元格4,4</td>
+          <td>单元格4,5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--表单-->
+  <form>
     <fieldset>
-        <legend>用户登录</legend>
-        <div class="form-group">
-            <label>登录账户</label>
-            <input type="email" class="form-control" placeholder="请输入你的用户名或Email">
-        </div>
-        <div class="form-group">
-            <label>密码</label>
-            <input type="text" class="form-control" placeholder="请输入你的密码">
-        </div>
-        <div class="checkbox">
-            <label>
+      <legend>用户登录</legend>
+      <div class="form-group">
+        <label>登录账户</label>
+        <input type="email" class="form-control" placeholder="请输入你的用户名或Email">
+      </div>
+      <div class="form-group">
+        <label>密码</label>
+        <input type="text" class="form-control" placeholder="请输入你的密码">
+      </div>
+      <div class="checkbox">
+        <label>
                 <input type="checkbox">记住密码</label>
-        </div>
-        <button type="submit" class="btn btn-default">登录</button>
+      </div>
+      <button type="submit" class="btn btn-default">登录</button>
     </fieldset>
-</form>
+  </form>
+
+  <form action="" class="form-inline">
+    <div class="form-group"><input type="text" class="form-control" placeholder="请输入用户名"></div>
+    <div class="form-group"><input type="text" class="form-control" placeholder="请输入密码"></div>
+    <div class="checkbox">
+      <label for=""><input type="checkbox">记住密码</label>
+      <button type="submit" class="btn btn-default">登录</button>
+    </div>
+  </form>
+
+  <form action="" class="form-horizontal" role="form">
+    <div class="form-group">
+      <label for="account" class="col-sm-2 control-label">用户名</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="请输入你的用户名">
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label for="password" class="col-sm-2 control-label">密码</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="请输入你的密码">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox"><label for=""><input type="checkbox">记住密码</label></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10"><button class="btn btn-default" type="submit">登录</button></div>
+    </div>
+  </form>
+
+  <!-- select元素 -->
+  <select name="" id="" multiple="multiple">
+    <option value="">1</option>
+    <option value="">2</option>
+    <option value="">3</option>
+    <option value="">4</option>
+  </select>
+
+  <!-- 单选框和复选框 -->
+  <div class="checkbox">
+    <label for="" class="checkbox-inline"><input type="checkbox">选项1</input></label>
+    <label for=""><input type="checkbox">选项2</input></label>
+    <label for=""><input type="checkbox">选项3</input></label>
+    <label for=""><input type="checkbox">选项4</input></label>
+    <label for=""><input type="checkbox">选项5</input></label>
+  </div>
+
+  <div class="form-group has-warning"><label for="" class="control-label">警告</label><input type="text" class="form-control"></div>
+  <span class="help-block">自己独占一行或者多行的块级帮助</span>
+  <button class="btn btn-default active">活动</button>
+  <button class="btn btn-default">正常</button>
+  <p class="text-muted bg-primary">灰</p>
+  <p class="text-primary">蓝</p>
+  <a href="" class="close">&times;</a>
+  <div class="caret"></div>
+  <p class="text-hide" style="background-color:red;">文本</p>
 </body>
 
 </html>
