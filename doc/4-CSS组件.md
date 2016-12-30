@@ -305,3 +305,51 @@ Bootstrap的CSS组件包括Icon图标（Glyphicon）、下拉菜单（Dropdown�
 警告框中的链接可以使用样式类`alert-link`。
 
 ## 进度条
+```html
+<div class="progress progress-striped active">
+  <div class="progress-bar progress-bar-warning" style="width:10%;"></div>
+  <div class="progress-bar progress-bar-info" style="width:30%;"></div>
+  <div class="progress-bar progress-bar-success" style="width:50%;"></div>
+</div>
+```
+
+进度条通过一个类名为`progress`的div包一个类名为`progress-bar`的div形成。
+
+加上`progress-striped`类表明使用斜条纹样式，再加`active`应用斜条纹运动样式。
+
+`progress-bar-*`：应用不同样式，有`info`、`danger`、`success`和`warning`。
+
+## 媒体对象
+
+### 默认样式
+一组媒体的默认使用样式包括如下：`media`、`media-object`、`media-body`和`media-heading`。
+
+## 列表组
+### 基础列表组
+```html
+<ul class="list-group">
+  <li class="list-group-item active"><span class="badge">1</span> 列表组项1</li>
+  <li class="list-group-item">列表组项2</li>
+  <li class="list-group-item">列表组项3</li>
+  <li class="list-group-item">列表组项4</li>
+</ul>
+```
+
+上面的`ul`元素换成`div`，`li`元素换成`a`，即可实现可链接的列表项。
+
+用`active`类表示活动的列表组。
+
+可以自定义列表组的颜色`list-group-item-*`，`success`、`info`。
+
+`list-group-item`子元素可以做成自定义列表项，有`list-group-item-heading`和`list-group-item-text`两个类。
+
+## 面板
+```html
+<div class="panel panel-success">
+  <div class="panel-heading">面板头</div>
+  <div class="panel-body">面板内容</div>
+  <div class="panel-footer">面板底部</div>
+</div>
+```
+
+通过`panel-*`设置颜色，可设置`success`、`info`、`warning`和`danger`。
