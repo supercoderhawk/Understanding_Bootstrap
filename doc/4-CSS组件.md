@@ -192,3 +192,116 @@ Bootstrap的CSS组件包括Icon图标（Glyphicon）、下拉菜单（Dropdown�
 
 ### 导航条左右浮动
 类`navbar-left`实现左浮动，类`navbar-right`实现右浮动。
+
+### 顶部固定或者底部固定
+类`navbar-fixed-top`和`navbar-fixed-bottom`
+
+### 去圆角
+类`navbar-static-top`
+
+### 响应式导航条
+```html
+<div class="navbar navbar-default">
+  <div class="navbar-header">
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="sc-only">触发导航</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="" class="navbar-brand">标题</a>
+  </div>
+  <div class="collapse navbar-collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="">导航1</a></li>
+      <li><a href="">导航2</a></li>
+      <li><a href="">导航3</a></li>
+      <li><a href="">导航4</a></li>
+      <li><a href="">导航5</a></li>
+      <li class="dropdown">
+        <a data-toggle="dropdown" class="dropdown-toggle" href="">下拉菜单<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="">子菜单1</a></li>
+          <li><a href="">子菜单2</a></li>
+          <li><a href="">子菜单3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+```
+
+将导航的HTML包在一个div中，并设置`collapse`、`navbar-collapse`和`navbar-responsive-collapse`三个类，表示小于768px不显示导航项。
+
+同时导航头部使用类为`navbar-toggle`的button将图标包在里面，这是规定。
+
+### 反色导航条
+将类`navbar-default`替换为`navbar-inverse`。
+
+## 面包屑导航
+```html
+<ul class="breadcrumb">
+  <li><a href="">条1</a></li>
+  <li><a href="">条2</a></li>
+  <li class="active">条3</li>
+</ul>
+```
+
+## 分页导航
+类`pagination`，有`active`和`disabled`样式。
+
+```html
+<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+```
+
+通过使用`pagination-lg`和`pagination-sm`控制大小。
+
+### 翻页
+```html
+<ul class="pager">
+  <li><a href="">上一页</a></li>
+  <li><a href="">下一页</a></li>
+</ul>
+```
+
+使用`previous`或者`next`实现左右对齐。
+
+使用`disabled`禁用。
+
+## 标签
+类`label`，实现对文字添加高亮背景。
+
+设置颜色：`label-default`、`label-primary`、`label-success`、`label-warning`、`label-danger`和`label-info`。
+
+## 徽章
+```html
+<a href="#">链接<span class="badge">10</span></a>
+```
+
+## 大屏幕展播
+类`Jumbotron`
+
+## 页面标题
+类`page-header`
+
+## 缩略图
+类`thumbnail`，然后图片作为其子元素，子元素还可以是其他的文字或者按钮。
+
+## 警告框
+```html
+<div class="alert">
+  <button class="close" data-dismiss="alert">&times;</button>
+  <strong>警告！</strong>警告
+</div>
+```
+
+类`alert`还可添加`alert-info`、`alert-warning`、`alert-danger`和`alert-success`。
+
+警告框中的链接可以使用样式类`alert-link`。
+
+## 进度条
